@@ -22,7 +22,7 @@ app.post('/ask', async (req, res) => {
     }
 
     try {
-        const response = await axios.get('https://api.kastg.xyz/api/ai/chatgpt', {
+        const response = await axios.get('https://api.kastg.xyz/api/ai/fast-llamaV3-large', {
             params: {
                 prompt: userQuestion,
                 key: process.env.API_KEY  // Use API key from .env file
